@@ -6,13 +6,14 @@
   text-decoration: none;
 }
 
-
+/* header */
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/src/images/desktop/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 650px;
+  width: 100%;
 }
 
 .header-container {
@@ -36,18 +37,52 @@ header {
   margin-top: 40px;
   margin-left: 45px;
 }
-.header-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 125px;
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 125px;
 }
-.menu{
-    color: #fff;
-    display: flex;
-    font-size: 0.9375em;
-    font-family: "alata", sans-serif;
+.menu {
+  color: #fff;
+  display: flex;
+  font-size: 0.9375em;
+  font-family: "alata", sans-serif;
 }
-.menu li{
-    margin-left: 30px;
+.menu li {
+  margin-left: 30px;
+}
+
+/* interactive section */
+.interactive {
+  max-width: 1112px;
+  margin: 0 auto;
+  padding-top: 158px;
+}
+.interactive img {
+  max-width: 730px;
+  max-height: 500px;
+}
+.interactive-text {
+  position: relative;
+  top: -321px;
+  left: 570px;
+  max-width: 542px;
+  height: 317px;
+  padding: 97px 0 0 97px;
+  background-color: #fff;
+  text-align: left;
+}
+.interactive-text h2 {
+  font-family: "josefin sans", sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.interactive-text p {
+  color: #8b8b8b;
+  font-family: "alata", sans-serif;
+  font-size: 0.9375em;
+  margin-top: 40px;
+  line-height: 1.5;
 }
