@@ -9,12 +9,14 @@
 
   <style>
     .attribution {
+      margin-top: 10px;
       font-size: 11px;
       text-align: center;
+      color: #fff;
     }
 
     .attribution a {
-      color: hsl(228, 45%, 44%);
+      color: hsl(228, 83%, 67%);
     }
   </style>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,16 +28,18 @@
 <body>
 
   <header>
-    <div class="header-container">
+    <div class="header-container container">
       <div class="header-menu">
-        <img src="./images/logo.svg" alt="logo">
-        <ul class="menu">
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
-        </ul>
+        <a href="#"><img src="./images/logo.svg" alt="logo"></a>
+        <nav>
+          <ul class="menu">
+            <li><a href="#">About</li></a>
+            <li><a href="#">Careers</li></a>
+            <li><a href="#">Events</li></a>
+            <li><a href="#">Products</li></a>
+            <li><a href="#">Support</li></a>
+          </ul>
+        </nav>
       </div>
       <div class="title-box">
         <h1 class="header-title">Immersive experiences that deliver</h1>
@@ -43,7 +47,7 @@
     </div>
   </header>
 
-  <section class="interactive">
+  <section class="interactive container">
     <img src="./images/desktop/image-interactive.jpg" alt="man playing a vr game">
     <div class="interactive-text">
       <h2>The leader in interactive VR</h2>
@@ -54,39 +58,120 @@
     </div>
   </section>
 
-  <section>
-    <h3>Our creations</h3>
-
-    <a href="#">See all</a>
+  <section class="container our-creations">
+    <div class="our-creations-header">
+      <h3>Our creations</h3>
+      <a href="#">See all</a>
+    </div>
 
     <ul>
-      <li>Deep earth</li>
-      <li>Night arcade</li>
-      <li>Soccer team VR</li>
-      <li>The grid</li>
-      <li>From up above VR</li>
-      <li>Pocket borealis</li>
-      <li>The curiosity</li>
-      <li>Make it fisheye</li>
+      <li>
+        <div class="our-creations-images no-margin-left">
+          <img src="./images/desktop/image-deep-earth.jpg" alt="deep earth">
+          <div class="subtitle">
+            <p>Deep earth</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="our-creations-images">
+          <img src="./images/desktop/image-night-arcade.jpg" alt="night arcade">
+          <div class="subtitle">
+            <p>Night arcade</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+      <li>
+        <div class="our-creations-images">
+          <img src="./images/desktop/image-soccer-team.jpg" alt="soccer team">
+          <div class="subtitle">
+            <p>Soccer team VR</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+      <li>
+        <div class="our-creations-images">
+          <img src="./images/desktop/image-grid.jpg" alt="the grid">
+          <div class="subtitle">
+            <p> The grid</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="our-creations-images no-margin-left">
+          <img src="./images/desktop/image-from-above.jpg" alt="from up above vr">
+          <div class="subtitle">
+            <p>From up above VR</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="our-creations-images">
+          <img src="./images/desktop/image-pocket-borealis.jpg" alt="pocket borealis">
+          <div class="subtitle">
+            <p>Pocket borealis</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="our-creations-images">
+          <img src="./images/desktop/image-curiosity.jpg" alt="curiosity">
+          <div class="subtitle">
+            <p>The curiosity</p>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="our-creations-images">
+          <img src="./images/desktop/image-fisheye.jpg" alt="make it fisheye">
+          <div class="subtitle">
+            <p>Make it fisheye</p>
+          </div>
+        </div>
+      </li>
+      <li>
     </ul>
   </section>
 
   <footer>
-    <ul>
-      <li>About</li>
-      <li>Careers</li>
-      <li>Events</li>
-      <li>Products</li>
-      <li>Support</li>
-    </ul>
-    <p>© 2021 Loopstudios. All rights reserved.</p>
+    <div class="footer-container container">
+      <div class="footer-images">
+        <img src="./images/logo.svg" alt="">
+        <ul class="social-icons">
+          <li><a href="#"><img src="./images/icon-facebook.svg" alt="facebook"> </a></li>
+          <li><a href="#"><img src="./images/icon-twitter.svg" alt="twitter"> </a></li>
+          <li><a href="#"><img src="./images/icon-pinterest.svg" alt="pinterest"> </a></li>
+          <li><a href="#"><img src="./images/icon-instagram.svg" alt="instagram"> </a></li>
+      </div>
+      <div class="footer-info">
+        <nav>
+          <ul class="footer-menu">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </nav>
+        <p>© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Vitor Silva</a>.
+    </div>
   </footer>
 
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>
