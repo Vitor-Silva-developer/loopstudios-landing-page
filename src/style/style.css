@@ -43,10 +43,9 @@
 /* header */
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("/src/images/desktop/image-hero.jpg");
-  background-repeat: no-repeat;
+    url("/src/images/desktop/image-hero.jpg") no-repeat center;
   background-size: cover;
-  height: 650px;
+  height: 645px;
   width: 100%;
 }
 
@@ -89,11 +88,12 @@ header {
 @media (max-width: 700px){
   .title-box{
     margin: 0 auto;
-    max-width: fit-content;
+    max-width: 100%;
+    height: fit-content;
   }
   .header-title{
     font-size: 2.5em;
-    margin-left: 10px;
+    margin: 20px;
   }
 }
 
@@ -108,7 +108,7 @@ header {
 .interactive-text {
   position: absolute;
   top: 985px;
-  right: 11%;
+  right: 14%;
   max-width: 542px;
   height: 325px;
   padding: 97px 0 0 97px;
@@ -157,6 +157,14 @@ header {
     text-align: left;
   }
 }
+@media (max-width: 968px){
+  .interactive-text h2{
+    font-size: 2em;
+  }
+  .interactive-text p{
+    text-align: center;
+  }
+}
 /* section our creations */
 .our-creations {
   margin-top: 185px;
@@ -166,6 +174,7 @@ header {
   font-size: 3em;
   font-family: "josefin sans", sans-serif;
   text-transform: uppercase;
+  font-weight: 300;
 }
 .our-creations a {
   font-size: 0.9375em;
@@ -231,6 +240,7 @@ header {
 @media (max-width:700px){
   .our-creations-header h3{
     margin: 0 auto;
+    font-size: 2em;
   }
   .our-creations-header a{
     margin: 0 auto;
@@ -321,16 +331,40 @@ footer {
 @media (max-width:700px){
   footer{
     margin-top: 100px;
+    height: 490px;
   }
   .footer-images{
     padding-bottom: 10px;
     display: block;
-    max-width: 100%;
+    margin: 0 auto;
+    max-width: 192px;
   }
   .footer-logo{
     margin: 0 auto;
   }
   .footer-menu{
     flex-direction: column;
+    align-items: center;
+  }
+  .footer-info nav{
+    position: relative;
+    margin: 0 auto;
+  }
+  .footer-menu li{
+    margin-top: 15px;
+  }
+  .social-icons{
+    position: relative;
+    top: 280px;
+  }
+  .copy{
+    position: relative;
+    top: 100px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .attribution{
+    position: relative;
+    top: 110px;
   }
 }
