@@ -432,7 +432,20 @@ footer {
     opacity: 1;
   }
 }
+@keyframes side-entering{
+  from{
+    transform: translateX(100px);
+    opacity: .1;
+  }
+  to{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* animations */
-.title-box, .header-menu, .menu-logo{
+.title-box, .header-menu, .menu-logo, .interactive img, .our-creations-header, .footer-container{
   animation: entering 1s; 
+}
+.interactive-text, .our-creations-images{
+  animation: side-entering 2s;
 }
