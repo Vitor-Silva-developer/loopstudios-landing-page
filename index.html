@@ -7,18 +7,6 @@
 
   <title>Loopstudios landing page</title>
 
-  <style>
-    .attribution {
-      margin-top: 10px;
-      font-size: 11px;
-      text-align: center;
-      color: #fff;
-    }
-
-    .attribution a {
-      color: hsl(228, 83%, 67%);
-    }
-  </style>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
     rel="stylesheet">
@@ -30,18 +18,21 @@
   <header>
     <div class="header-container container">
       <div class="header-menu">
-        <a href="#"><img src="./src/images/logo.svg" alt="logo"></a>
+        <a class="menu-logo" href="#"><img src="./src/images/logo.svg" alt="logo"></a>
         <div class="hamburger">
-          <img src="./src/images/icon-hamburger.svg" alt="menu">
+          <img class="active open" src="./src/images/icon-hamburger.svg" alt="menu">
+          <img class="close" src="./src/images/icon-close.svg" alt="menu-close">
         </div>
         <nav>
-          <ul class="menu">
-            <li><a href="#">About</li></a>
-            <li><a href="#">Careers</li></a>
-            <li><a href="#">Events</li></a>
-            <li><a href="#">Products</li></a>
-            <li><a href="#">Support</li></a>
-          </ul>
+          <div class="menu-container">
+            <ul class="menu">
+              <li class="has-hover"><a href="#">About</a></li>
+              <li class="has-hover"><a href="#">Careers</a></li>
+              <li class="has-hover"><a href="#">Events</a></li>
+              <li class="has-hover"><a href="#">Products</a></li>
+              <li class="has-hover"><a href="#">Support</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
       <div class="title-box">
@@ -64,7 +55,7 @@
   <section class="container our-creations">
     <div class="our-creations-header">
       <h3>Our creations</h3>
-      <a href="#">See all</a>
+      <a class="botao" href="#">See all</a>
     </div>
 
     <ul>
@@ -148,32 +139,27 @@
       <div class="footer-images">
         <img class="footer-logo" src="./src/images/logo.svg" alt="logo">
         <ul class="social-icons">
-          <li><a href="#"><img src="./src/images/icon-facebook.svg" alt="facebook"> </a></li>
-          <li><a href="#"><img src="./src/images/icon-twitter.svg" alt="twitter"> </a></li>
-          <li><a href="#"><img src="./src/images/icon-pinterest.svg" alt="pinterest"> </a></li>
-          <li><a href="#"><img src="./src/images/icon-instagram.svg" alt="instagram"> </a></li>
+          <li class="has-hover"><a href="#"><img src="./src/images/icon-facebook.svg" alt="facebook"> </a></li>
+          <li class="has-hover"><a href="#"><img src="./src/images/icon-twitter.svg" alt="twitter"> </a></li>
+          <li class="has-hover"><a href="#"><img src="./src/images/icon-pinterest.svg" alt="pinterest"> </a></li>
+          <li class="has-hover"><a href="#"><img src="./src/images/icon-instagram.svg" alt="instagram"> </a></li>
       </div>
       <div class="footer-info">
         <nav>
           <ul class="footer-menu">
-            <li>About</li>
-            <li>Careers</li>
-            <li>Events</li>
-            <li>Products</li>
-            <li>Support</li>
+            <li class="has-hover"><a href="#">About</a></li>
+            <li class="has-hover"><a href="#">Careers</a></li>
+            <li class="has-hover"><a href="#">Events</a></li>
+            <li class="has-hover"><a href="#">Products</a></li>
+            <li class="has-hover"><a href="#">Support</a></li>
           </ul>
         </nav>
         <p class="copy">© 2021 Loopstudios. All rights reserved.</p>
       </div>
     </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Vitor Silva</a>.
-    </div>
   </footer>
 
+  <script src="./src/index.js"></script>
 </body>
 
 </html>
